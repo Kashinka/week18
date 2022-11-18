@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Опрос для хозяев котов</title>
+    <link rel="form icon" href="https://cdn.icon-icons.com/icons2/941/PNG/512/12_icon-icons.com_73809.png"
+        type="image/png">
+</head>
+
+<body>
+    <h1>Опрос для хозяев котов</h1>
+    <form action="script.php" method="post">
+        <div>
+            <label for="name_of_cat">Имя кота
+                <input type="text" placeholder="Введите имя кота" id="name_of_cat" name="name_of_cat" />
+            </label>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Данные владельца кота</legend>
+                <input type="text" placeholder="Имя" id="owner_name" name="owner" />
+                <br><input type="text" placeholder="Контакты" id="owner_contacts" name="owner" />
+            </fieldset>
+        </div>
+        <div>
+            <label for="select-type">Выберите породу кошки:</label>
+        </div>
+        <div>
+            <select name="type" id="select-type">
+                <option value="none" hidden="">>>>>>> Выберите породу из этого списка</option>
+                <option value="abissinskayakoshka">Абиссинская кошка</option>
+                <option value="avstralijskayadymchatayakoshka_avstralijskayamist">Австралийская дымчатая кошка
+                    (Австралийская мист)</option>
+                <option value="aziatskayatabbi">Азиатская табби</option>
+                <option value="amerikanskayazhestkosherstnayakoshka">Американская жесткошерстная кошка</option>
+                <option value="amerikanskayakorotkosherstnayakoshka">Американская короткошерстная кошка</option>
+                <option value="amerikanskijbobtejl">Американский бобтейл</option>
+                <option value="amerikanskijkerl">Американский керл</option>
+                <option value="anatolijskayakoshka_tureckayakorotkosherstnaya">Анатолийская кошка (Турецкая
+                    короткошерстная)</option>
+                <option value="aravijskijmau">Аравийский мау</option>
+                <option value="balinezijskayakoshka_balinez_balijskayakoshka">Балинезийская кошка (Балинез,
+                    Балийская
+                    кошка)</option>
+                <option value="bengalskayakoshka">Бенгальская кошка</option>
+                <option value="bombejskayakoshka">Бомбейская кошка</option>
+                <option value="brazilskayakorotkosherstnayakoshka">Бразильская короткошерстная кошка</option>
+                <option value="britanskayadlinnosherstnayakoshka">Британская длинношерстная кошка</option>
+                <option value="britanskayakorotkosherstnayakoshka">Британская короткошерстная кошка</option>
+                <option value="burmanskayakoshka">Бурманская кошка</option>
+                <option value="burmilladlinnosherstnaya">Бурмилла длинношерстная</option>
+                <option value="burmillakorotkosherstnaya">Бурмилла короткошерстная</option>
+                <option value="gavana">Гавана</option>
+                <option value="gimalajskayakoshka">Гималайская кошка</option>
+                <option value="devon_reks">Девон-рекс</option>
+                <option value="donskojsfinks">Донской сфинкс</option>
+                <option value="egipetskayamau">Египетская мау</option>
+                <option value="jorskayashokoladnayakoshka">Йорская шоколадная кошка</option>
+                <option value="kalifornijskayasiyayushchayakoshka">Калифорнийская сияющая кошка</option>
+                <option value="kanaani_hanaani">Канаани (Ханаани)</option>
+                <option value="kanadskijsfinks">Канадский сфинкс</option>
+                <option value="karelskijbobtejl">Карельский бобтейл</option>
+                <option value="keltskayakoshka_evropejskayakorotkosherstnaya">Кельтская кошка (Европейская
+                    короткошерстная)</option>
+                <option value="kimrik">Кимрик</option>
+                <option value="korat">Корат</option>
+                <option value="kornishreks">Корниш рекс</option>
+                <option value="kurilskijbobtejl">Курильский бобтейл</option>
+                <option value="manchkin">Манчкин</option>
+                <option value="manchkin_napoleon">Манчкин-Наполеон</option>
+                <option value="mejn_kun">Мейн-кун</option>
+                <option value="mekongskijbobtejl_tajskijbobtejl">Меконгский бобтейл (тайский бобтейл)</option>
+                <option value="minskin">Минскин</option>
+                <option value="menks_menskayabeskhvostayakoshka">Мэнкс (Мэнская бесхвостая кошка)</option>
+                <option value="nevskayamaskaradnayakoshka">Невская маскарадная кошка</option>
+                <option value="nemeckijreks">Немецкий рекс</option>
+                <option value="nibelung">Нибелунг</option>
+                <option value="norvezhskayalesnayakoshka">Норвежская лесная кошка</option>
+                <option value="oregon_reks">Орегон-рекс</option>
+                <option value="orientalnayadlinnosherstnayakoshka">Ориентальная длинношерстная кошка</option>
+                <option value="orientalnayakorotkosherstnayakoshka">Ориентальная короткошерстная кошка</option>
+                <option value="ohosazules">Охос азулес</option>
+                <option value="persidskayakoshka">Персидская кошка</option>
+                <option value="peterbold_peterburgskijsfinks">Петерболд (Петербургский сфинкс)</option>
+                <option value="piksibob">Пиксибоб</option>
+                <option value="ragamaffin">Рагамаффин</option>
+                <option value="russkayagolubayakoshka">Русская голубая кошка</option>
+                <option value="regdoll">Рэгдолл</option>
+                <option value="savanna">Саванна</option>
+                <option value="svyashchennayabirmanskayakoshka_svyashchennayabirma">Священная бирманская кошка
+                    (священная бирма)</option>
+                <option value="selkirkreks">Селкирк рекс</option>
+                <option value="serengeti">Серенгети</option>
+                <option value="siamskayakoshka">Сиамская кошка</option>
+                <option value="sibirskayakoshka">Сибирская кошка</option>
+                <option value="singapurskayakoshka_singapura">Сингапурская кошка (сингапура)</option>
+                <option value="skottish_strajt_shotlandskayapryamouhayakoshka">Скоттиш-страйт (шотландская прямоухая
+                    кошка)</option>
+                <option value="skottish_fol_shotlandskayavislouhayakoshka">Скоттиш-фолд (Шотландская вислоухая
+                    кошка)
+                </option>
+                <option value="snou_shu">Сноу-шу</option>
+                <option value="sokoke">Сококе</option>
+                <option value="somali_somalijskayakoshka">Сомали (Сомалийская кошка)</option>
+                <option value="tajskayakoshka">Тайская кошка</option>
+                <option value="tojger">Тойгер</option>
+                <option value="tonkinskayakoshka">Тонкинская кошка</option>
+                <option value="tureckayaangora">Турецкая ангора</option>
+                <option value="tureckijvan_tureckayavanskayakoshka">Турецкий ван (Турецкая ванская кошка)</option>
+                <option value="ukrainskijlevkoj">Украинский левкой</option>
+                <option value="uralskijreks">Уральский рекс</option>
+                <option value="forinvajt">Форин вайт</option>
+                <option value="hajlend_fold_shotlandskayavislouhayadlinnosherstnayakoshka">Хайленд-фолд (Шотландская
+                    вислоухая длинношерстная кошка)</option>
+                <option value="cejlonskayakoshka">Цейлонская кошка</option>
+                <option value="chauzi">Чаузи</option>
+                <option value="shantilitiffani">Шантильи Тиффани</option>
+                <option value="shartrez_kartezianskayakoshka">Шартрез (Картезианская кошка)</option>
+                <option value="egejskayakoshka">Эгейская кошка</option>
+                <option value="ekzoticheskayakorotkosherstnayakoshka">Экзотическая короткошерстная кошка</option>
+                <option value="yavanez_yavanskayakoshka">Яванез (Яванская кошка)</option>
+                <option value="yaponskijbobtejl">Японский бобтейл</option>
+            </select>
+        </div>
+        <div>
+            <h2>Чем питается?</h2>
+        </div>
+        <div>
+            <label for="food1">
+                <input type="checkbox" id="food1" name="food" value="Сухой корм" />Сухой корм</label>
+            <label for="food2">
+                <input type="checkbox" id="food2" name="food" value="Влажный корм" />Влажный корм</label>
+            <label for="food3">
+                <input type="checkbox" id="food3" name="food" value="Натуральный корм" />Натуральный корм</label>
+        </div>
+        <div>
+            <h2>Пол кота</h2>
+            <label for="man">
+                <input type="radio" id="man" name="sex" value="male cat" />М</label>
+            <label for="woman">
+                <input type="radio" id="woman" name="sex" value="female cat" />Ж</label>
+        </div>
+        <div>
+            <h3>Дополнительно</h3>
+            <textarea name="advanced" id="advanced" cols="30" rows="8"
+                placeholder="Хотели бы что-то еще рассказать про Вашего кота?"></textarea>
+        </div>
+        <div>
+            <h3>Прикрепить фото кота</h3>
+            <input type="file" id="photo_of_cat" name="photo_of_cat" />
+        </div>
+        <div>
+            <p><input type="submit" id="send_form" name="register" value="Отправить форму" /></p>
+        </div>
+    </form>
+
+</body>
+
+</html>
