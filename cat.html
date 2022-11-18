@@ -12,14 +12,14 @@
     <form action="script.php" method="post">
         <div>
             <label for="name_of_cat">Имя кота
-                <input type="text" placeholder="Введите имя кота" id="name_of_cat" name="name_of_cat" />
+                <input type="text" placeholder="Введите имя кота" id="name_of_cat" name="name_of_cat" required />
             </label>
         </div>
         <div>
             <fieldset>
                 <legend>Данные владельца кота</legend>
-                <input type="text" placeholder="Имя" id="owner_name" name="owner" />
-                <br><input type="text" placeholder="Контакты" id="owner_contacts" name="owner" />
+                <input type="text" placeholder="Имя" id="owner_name" name="owner" required />
+                <br><input type="text" placeholder="Контакты" id="owner_contacts" name="owner" required />
             </fieldset>
         </div>
         <div>
