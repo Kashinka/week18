@@ -1,4 +1,6 @@
-function showMessage() {
+
+
+/*function showMessage() {
 
     let name = document.getElementById('name').value;
 
@@ -60,4 +62,4 @@ function showMessage() {
 
     }
 
-}
+} */
