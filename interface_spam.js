@@ -1,26 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-
-    document.getElementById('send').addEventListener('click', sendMessage);
-
-});
-
 let badWords = [/viagra/ig, /козявка/ig, /какашка/ig];
-
-function sendMessage() {
-
-    let message = document.getElementById('user-input').value;
-
-    message = checkSpam(message);
-
-    document.getElementById('result').innerHTML = 'Message sent: <pre>' + message + '</pre>';
-
-}
 
 function checkSpam(message) {
 
     for (let j = 0; j < badWords.length; j++) {
         
-        let badWord = badWords[j];
+        const badWord = badWords[j];
 
         message = message.replaceAll(badWord, 'xxx');
     }
@@ -29,5 +13,48 @@ function checkSpam(message) {
 
 }
 
-let storage = $('#user-input').html();
-localStorage.comments = JSON.stringify(storage);
+function comment () {
+
+    let storage = $('#user-input').val();
+
+    let arr = JSON.parse(localStorage.comments);
+
+    storage = checkSpam(storage);
+
+    if (!Array.isArray(arr)) {
+        arr = [storage];
+    } else {
+        arr.push(storage);
+    }
+
+    localStorage.comments = JSON.stringify(arr);
+
+    $('#user-input').val('');
+    
+    Showcomments ();
+
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    Showcomments ();
+
+});
+
+function Showcomments () {
+
+    let arr = JSON.parse(localStorage.comments);
+
+    let comments_result = '';
+
+    for (let i = 0; i < arr.length; i++) {
+
+        const item = arr [i];
+
+        comments_result += "<div>" + item + "</div>"
+
+    }
+
+    document.getElementById('result').innerHTML = comments_result;
+
+}
