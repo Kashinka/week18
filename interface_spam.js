@@ -28,3 +28,6 @@ function checkSpam(message) {
     return message;
 
 }
+
+let storage = $('#user-input').html();
+localStorage.comments = JSON.stringify(storage);
