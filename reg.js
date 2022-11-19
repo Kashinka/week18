@@ -1,7 +1,12 @@
 checkFunction {
+    const regexName = new RegExp('^[а-яА-Я]{30}|[a-zA-Z]{30}$');
+    console.log(regexName);
+}
+
+/*checkFunction {
     const regexName=document.checkFunction.name.value;  
     return /^[а-яА-Я]{30}|[a-zA-Z]{30}$/.test(regexName);
-}
+}*/
 
 /*function showMessage() {
 
