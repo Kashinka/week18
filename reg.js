@@ -2,9 +2,9 @@ function checkFunction () {
 
     const regexName = new RegExp('^[а-яА-Я]{30}|[a-zA-Z]{30}$');
     
-    if (regexName.test(value) === false) {
+    if (regexName.test(document.getElementById('name').value) === false) {
 
-        document.getElementById('result').innerHTML = (`Ошибка!`);
+        document.getElementById('result').innerHTML = (`Имя нужно вводить только полностью русскими или английскими буквами`);
 
     }
 }
