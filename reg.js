@@ -1,4 +1,4 @@
-checkFunction {
+function checkFunction () {
     const regexName = new RegExp('^[а-яА-Я]{30}|[a-zA-Z]{30}$');
     console.log(regexName);
 }
