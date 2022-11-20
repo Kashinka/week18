@@ -2,7 +2,7 @@ function checkFunction () {
 
     const regexName = new RegExp('^[а-яА-Я]{30}|[a-zA-Z]{30}$');
     
-    if (regexName.test(...) === false) {
+    if (regexName.test(value) === false) {
 
         document.getElementById('result').innerHTML = (`Ошибка!`);
 
